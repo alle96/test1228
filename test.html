@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>띠용</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <!--<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:title" content="띠용" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="우리가게 홍보매니저 띠용!" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="" />
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+    function vidplay() {
+        var video = document.getElementById("Video1");
+        var button = document.getElementById("play");
+        if (video.paused) {
+            video.play();
+            button.textContent = "||";
+        } else {
+            video.pause();
+            button.textContent = ">";
+        }
+    }
+
+//    function restart() {
+//        var video = document.getElementById("Video1");
+//        video.currentTime = 0;
+//    }
+//
+//    function skip(value) {
+//        var video = document.getElementById("Video1");
+//        video.currentTime += value;
+//    }
+</script>
+
+</head>
+<body>
+
+
+    <video autoplay loop class="video_lg" id="Video1">
+        <source src="video/ddiyoung_video.mp4" type="video/mp4; codecs=avc1.4D401E, mp4a.40.2">
+        <source src="video/ddiyoung_video.webm" type="video/webm">
+        현재 사용중인 웹브라우저가 비디오 영상을 지원하지 않습니다.
+    </video>
+
+
+<div id="buttonbar">
+    <!--<button id="restart" onclick="restart();">[]</button>-->
+    <!--<button id="rew" onclick="skip(-10)">&lt;&lt;</button>-->
+    <button id="play" onclick="vidplay()">&gt;</button>
+    <!--<button id="fastFwd" onclick="skip(10)">&gt;&gt;</button>-->
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bower_components/swiper/dist/js/swiper.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+</body>
+</html>
